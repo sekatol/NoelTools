@@ -17,12 +17,12 @@ public static class Demosaicing
 
         matcher.MatchStartForward([
             new(OpCodes.Ldarg_0),
-            new(OpCodes.Ldfld, AccessTools.Field(typeof(MosaicShower),"Targ")),
+            new(OpCodes.Ldfld, AccessTools.Field(typeof(MosaicShower), "Targ")),
             new(OpCodes.Brfalse),
             new(OpCodes.Ldarg_0),
-            new(OpCodes.Ldfld, AccessTools.Field(typeof(MosaicShower),"Targ")),
-            new(OpCodes.Call,AccessTools.PropertyGetter(typeof(X), "SENSITIVE")),
-            new(OpCodes.Callvirt,AccessTools.Method(typeof(IMosaicDescriptor), "countMosaic", [typeof(bool)])),
+            new(OpCodes.Ldfld, AccessTools.Field(typeof(MosaicShower), "Targ")),
+            new(OpCodes.Call, AccessTools.PropertyGetter(typeof(X), "SENSITIVE")),
+            new(OpCodes.Callvirt, AccessTools.Method(typeof(IMosaicDescriptor), "countMosaic", [typeof(bool)])),
             new(OpCodes.Br),
             new(OpCodes.Ldc_I4_0),
             new(OpCodes.Stloc_1)
