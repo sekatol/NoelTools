@@ -2,6 +2,10 @@
 
 A toolkit for Alice in Cradle based on BepInEx6.
 
+# Features
+
+- Demosaic
+
 # Installation
 
 - Download BepInEx Bleeding Edge (BE) builds from [official website](https://builds.bepinex.dev/projects/bepinex_be). You need to download the file like `BepInEx-Unity.Mono-win-x64-6.0.0-be.xxx+xxxxxxx.zip`.
