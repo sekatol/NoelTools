@@ -5,6 +5,7 @@ A toolkit for Alice in Cradle based on BepInEx6.
 # Features
 
 - Demosaic
+- Force enable all bench commands
 
 # Installation
 
